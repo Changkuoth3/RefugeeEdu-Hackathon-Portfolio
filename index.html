@@ -1,93 +1,20 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Refugee E-Learning</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Simple Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Refugee E-Learning</h1>
-    <a href="lessons.html">Browse Lessons</a> | <a href="upload.html">Upload Lesson</a>
-  </header>
-  <main>
-    <p>Learn anytime, anywhere. Access free education resources made for refugee learners.</p>
-  </main>
-</body>
-</html>
+  <div class="quiz-container">
+    <h1>Simple Quiz App</h1>
+    <div id="quiz"></div>
+    <button id="nextBtn" class="btn">Next</button>
+    <div id="score"></div>
+  </div>
 
-<!-- style.css -->
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-header {
-  background: #0077cc;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-main {
-  padding: 2rem;
-}
-a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-a: hover {
-  text-decoration: underline;
-}
-
-<!-- lessons.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lessons</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Available Lessons</h1>
-    <a href="index.html">Home</a>
-  </header>
-  <main>
-    <input type="text" id="searchBox" placeholder="Search by title or subject...">
-    <div id="lessonsContainer"></div>
-  </main>
-  <script src="lessons.js"></script>
-</body>
-</html>
-
-<!-- upload.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upload Lesson</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Upload a Lesson</h1>
-    <a href="index.html">Home</a>
-  </header>
-  <main>
-    <form id="uploadForm">
-      <input type="text" id="title" placeholder="Lesson Title" required><br>
-      <input type="text" id="subject" placeholder="Subject" required><br>
-      <input type="file" id="file" required><br>
-      <button type="submit">Upload</button>
-    </form>
-  </main>
-  <script src="upload.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
